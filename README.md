@@ -13,6 +13,8 @@ From the `Rover Searches California Desert for Water to Simulate Future Lunar Mi
 
 * 1. First, create label. I named it `rover`.
 * 2. Then, when the video is playing, press `s` to save frame into image. To stop playing video, press `q`.
+* 3. To pause the video, press `w`.
+* 4. To change label while played, press `a` and write the label on the console. 
 
 # Advances
 To create object detection dataset (in example Pascal VOC or YOLO format), put the produced images into a folder, then using LabelImg (`https://github.com/tzutalin/labelImg`), you could create bounding box(es). 
