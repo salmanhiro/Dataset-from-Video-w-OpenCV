@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Create a VideoCapture object and read from input file
-# If the input is the camera, pass 0 instead of the video file name
+# If the input is the camera, use 0. If file, change it with file location. 
 cap = cv2.VideoCapture('https://www.nasa.gov/downloadable/videos/arc-aav2718-krex-mvp2015-nasaweb.mp4')
 
 # Check if camera opened successfully
