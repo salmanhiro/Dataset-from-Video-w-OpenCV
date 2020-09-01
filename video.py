@@ -24,6 +24,16 @@ while(cap.isOpened()):
         cv2.imwrite(f'{label}-{framecount}.jpg', frame)
         framecount += 1
         print(framecount)
+    
+    if cv2.waitKey(25) & 0xFF == ord('w'): # pause until any key pressed
+        cv2.waitKey(-1)
+        print('video paused')
+    
+    if cv2.waitKey(25) & 0xFF == ord('a'): # change label
+        cv2.waitKey(-1)
+        print('changing label...')
+        label = input('label": ')
+
     # Press Q on keyboard to  exit
     if cv2.waitKey(25) & 0xFF == ord('q'):
       break
